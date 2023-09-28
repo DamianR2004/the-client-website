@@ -1,113 +1,210 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Funda favorieten</title>
     <link rel="stylesheet" href="./styles/styles.css">
-  </head>
-  <body>
+</head>
+<body>
     <header>
         <nav>
-          <img src="./assets/05 - Funda Mini logo/01 - Funda/02-funda-Blue.png" class="logo">
-
-
-                    </ul>
-        </nav>
-                
+            <a href="https://funda.nl"><img src="./assets/05 - Funda Mini logo/01 - Funda/02-funda-Blue.png" class="logo" height="150vh" width="200vw" alt="Funda Logo"></a>
+            <ul>
                 <li>
-                        <a href="">Kopen</a>
-
+                    <a href="">Kopen</a>
                 </li>
                 <li>
                     <a href="">Huren</a>
-            </li>
-            <li>
-                <a href="">Verkopen</a>
-        </li>
-        <li>
-            <a href="">Favorieten ♡</a>
-    </li>
-    <li>
-        <a href="https://www.funda.nl/account/mijn-huis/">Mijn huis ⌂</a>
-</li>
-<li>
-    <a href="https://www.funda.nl/account/">Damian 👤</a>
-</li>
-       
-                    <a>
-
-                    </a>
+                </li>
+                <li>
+                    <a href="">Verkopen</a>
+                </li>
+                <li>
+                    <a href="">Favorieten ♡</a>
+                </li>
+                <li>
+                    <a href="https://www.funda.nl/account/mijn-huis/">Mijn huis ⌂</a>
+                </li>
+                <li>
+                    <a href="https://www.funda.nl/account/">Damian 👤</a>
+                </li>
             </ul>
         </nav>
-
-
     </header>
-    <main>
-        
-        <a href="https://www.funda.nl/koop/ede/appartement-42287705-verlengde-amsterdamseweg-34/"> <img src="./assets/amsterdamseweg.jpg" class="AWEG"></a>
-                
-        <a href="https://www.funda.nl/koop/ede/appartement-42294721-raadhuisstraat-23/"> <img src="./assets/raadhuisstraat.jpg" class="RSTRAAT"></a>
-        </img>
-            <svg>
-            </svg>
-                    <label for="ster">Sterren level:</label>
-                    <meter
-                         id="ster" min="0" max="5" low="33" high="66" optimum="80" value="50">
-        </meter>
-     
-<ul class="RSTRAAT">    
-<li>Raadhuisstraat 23</li>
-<li>6711 DS Ede</li>
-<li>€350.000 k.k.</li>   
-<li>4 kamers</li>      
-<li>95 m²</li>
-<li>KOEN Makelaar Ede</li>
-</ul>
+    <img>
+    <h1>FAVORIETEN</h1>
+    <select class="fd-input" id="sort" name="sort" data-instant-search-handle="" autocomplete="off">
+        <option selected="" value="sorteer-mijn-datum_Descending">Bewaardatum ↓</option>
+        <option value="sorteer-mijn-datum_Ascending">Bewaardatum ↑</option>
+        <option value="sorteer-mijn-score_Descending">Objectscore</option>
+        <option value="sorteer-datum_Descending">Datum</option>
+        <option value="sorteer-plaats_Ascending">Plaats</option>
+        <option value="sorteer-postcode_Ascending">Postcode</option>
+        <option value="sorteer-adres_Ascending">Adres</option>
+        <option value="sorteer-prijs_Ascending">Vraagprijs</option>
+        <option value="sorteer-huurprijspermaand_Ascending">Huurprijs</option>
+        <option value="sorteer-woonopp_Ascending">Gebruiksopp.</option>
+        <option value="sorteer-perceelopp_Ascending">Perceelopp.</option>
+        <option value="sorteer-kamers_Ascending">Kamers</option>
+    </select>
+    <a href="https://www.funda.nl/koop/ede/appartement-42287705-verlengde-amsterdamseweg-34/">
+        <img src="./assets/amsterdamseweg.jpg" class="AWEG" alt="Amsterdamseweg">
+    </a>
+    <a href="https://www.funda.nl/koop/ede/appartement-42294721-raadhuisstraat-23/">
+        <img src="./assets/raadhuisstraat.jpg" class="RSTRAAT" alt="Raadhuisstraat">
+    </a>
+    <div class="sterren">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1 star</label>
+    </div>
+    <ul class="RaSTRAAT">
+        <li> <a href="https://www.funda.nl/koop/ede/appartement-42294721-raadhuisstraat-23/">Raadhuisstraat 23</a></li>
+        <li> <a href="https://www.funda.nl/koop/ede/appartement-42294721-raadhuisstraat-23/">6711 DS Ede</a></li>
+        <li>€350.000 k.k.</li>
+        <li>4 kamers</li>
+        <li>95 m²</li>
+        <li> <a href="https://www.funda.nl/makelaars/ede/18101-koen-makelaar-ede/">KOEN Makelaar Ede</a></li>
+    </ul>
+    <ul class="AmWEG">
+        <li> <a href="https://www.funda.nl/koop/ede/appartement-42287705-verlengde-amsterdamseweg-34/">Amsterdamseweg 34</a></li>
+        <li> <a href="https://www.funda.nl/koop/ede/appartement-42287705-verlengde-amsterdamseweg-34/">6711CN Ede</a></li>
+        <li>€275.000 k.k.</li>
+        <li>3 kamers</li>
+        <li>65 m²</li>
+        <li> <a href= "https://www.funda.nl/makelaars/ede/18152-domicilie-makelaars/">Domicilie Makelaars</a></li>
+    </ul>
+    <div class="knoppen">
+        <button class="page left">hallo</button>
+        <button class="page right">hallo</button>
+    </div>
+    <div class="rating-avatars">
+        <img src="assets/ffa09aec412db3f54deadf1b3781de2a.png" class="avatarrating1" alt="Avatar Rating 1">
+        <img src="assets/80889.png" class="avatarrating2" alt="Avatar Rating 2">
+    </div>
+    <div class="add-avatars">
+        <img src="assets/ffa09aec412db3f54deadf1b3781de2a.png" class="avataradd1" alt="Avatar Add 1">
+        <img src="assets/80889.png" class="avataradd2" alt="Avatar Add 2">
+    </div>
+    <div class="member-avatars">
+        <img src="assets/ffa09aec412db3f54deadf1b3781de2a.png" class="avatarmember1" alt="Avatar Member 1">
+        <img src="assets/80889.png" class="avatarmember2" alt="Avatar Member 2">
+    </div>
+    <div class="add-button">
+        <img src="assets/05 - Funda Mini logo/Plus-Symbol-Vector-PNG-Picture.png" class="add-knop" alt="Add Button">
+    </div>
+</div>
 
-<ul class="AWEG">    
-<li>Verlengde Amsterdamseweg 34</li>
-<li>6711 CN Ede</li>
-<li>€275.000 k.k.</li>   
-<li>3 kamers</li>      
-<li>65 m²</li>
-<li>Domicilie Makelaars</li>
-</ul>
 
-<button class="page left">hallo</button>
-<button class="page right">hallo</button>
-
-<img src="assets/ffa09aec412db3f54deadf1b3781de2a.png" class="avatarrating1">
-<img src="assets/80889.png" class="avatarrating2">
-
-
-<img src="assets/ffa09aec412db3f54deadf1b3781de2a.png" class="avataradd1">
-<img src="assets/80889.png" class="avataradd2">
-
-
+<div class="member-avatars">
 <img src="assets/ffa09aec412db3f54deadf1b3781de2a.png" class="avatarmember1">
 <img src="assets/80889.png" class="avatarmember2">
+</div>
 
+<div class="add-button">
+    <img src="assets/05 - Funda Mini logo/Plus-Symbol-Vector-PNG-Picture.png" class="add-knop">
+</div>
+
+</div>
                             
     </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <footer>
-  
+        <nav>
+            <div class="app-footer-v2-group">
+                <div class="app-footer-v2-items">
+                    <ul class="app-footer-v2-item-list" data-expandible="toggle-footer-tools" aria-expanded="false">
+                        <li>
+                            <a href="/huis-plaatsen/">Plaats je huis op funda</a>
+                        </li>
+                        <li>
+                            <a href="/makelaar-zoeken/" class="appfooter-Makelaar-link">Zoek een NVM-makelaar</a>
+                        </li>
+                        <li>
+                            <a href="/koop/bladeren/">Bladeren door aanbod</a>
+                        </li>
+                        <li>
+                            <a href="/mijn-huis-toevoegen/" class="waardecheck-trafficdriver">Wat is mijn woning waard?</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app-footer-v2-group">
+                <div class="app-footer-v2-items">
+                    <ul class="app-footer-v2-item-list" data-expandible="toggle-footer-info" aria-expanded="false">
+                        <li>
+                            <a href="https://help.funda.nl/hc/nl/?utm_source=funda&amp;utm_medium=footer" target="_blank">Vraag &amp; antwoord</a>
+                        </li>
+                        <li>
+                            <a href="/funda-index/funda-index/">Funda Index</a>
+                        </li>
+                        <li>
+                            <a href="/meer-weten/kopen/" class="trafficdriver-footer-hoekoopikeenhuis">Alles over een huis kopen</a>
+                        </li>
+                        <li>
+                            <a href="/meer-weten/verkopen/" class="trafficdriver-footer-hoekoopikeenhuis">Verkoop je huis</a>
+                        </li>
+                        <li>
+                            <a href="/zoekbetervindmeer/">Hoe zoek ik op funda?</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app-footer-v2-group">
+                <div class="app-footer-v2-items">
+                    <ul class="app-footer-v2-item-list" data-expandible="toggle-footer-realtors" aria-expanded="false">
+                        <li>
+                            <a href="https://www.fundadesk.nl">Funda desk</a>
+                        </li>
+                        <li>
+                            <a href="https://www.funda.nl/voormakelaars/verdieping/">Tips, trends &amp; nieuws</a>
+                        </li>
+                        <li>
+                            <a href="https://www.funda.nl/voormakelaars/leads/">Leads</a>
+                        </li>
+                        <li>
+                            <a href="https://www.funda.nl/voormakelaars/producten/">Producten</a>
+                        </li>
+                        <li>
+                            <a href="https://www.funda.nl/voormakelaars/events-meetups/">Events &amp; meetups</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app-footer-v2-group">
+                <div class="app-footer-v2-items">
+                    <ul class="app-footer-v2-item-list" data-expandible="toggle-footer-funda" aria-expanded="false">
+                        <li>
+                            <a href="/over/">Over funda</a>
+                        </li>
+                        <li>
+                            <a href="/contact/">Contact</a>
+                        </li>
+                        <li>
+                            <a href="https://jobs.funda.nl/l/nl/">Werken bij funda</a>
+                        </li>
+                        <li>
+                            <a href="/adverteren/">Adverteren</a>
+                        </li>
+                        <li>
+                            <a href="/meer-weten/redactioneel-beleid-funda/">Redactioneel beleid</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </footer>
-  </body>
+</body>
 </html>

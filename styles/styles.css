@@ -1,15 +1,22 @@
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: 400;
+    src:
+      url("/assets/fonts/ProximaNova-Medium_2770618388[2258].otf") format("opentype")
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Proxima Nova' , 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
     
 }
-body{
-    overflow: hidden;
-}
+
 
 img{
     max-width: 100%;
@@ -33,9 +40,9 @@ nav{
     top: 0;
     bottom: 0;
     left:0;
-    right: 0;
-    translate:-100% 0;
+    translate: -100% 0%;
     transition: .5s;
+    padding: 5em 1em 1em;
 
 }
 .hoofdmenu.open{
@@ -50,6 +57,7 @@ nav{
 header{
     display: flex;
     align-items: center;
+    padding:0 1em;
 }
 
 .rechtermenu{
@@ -72,14 +80,16 @@ header{
 }
 
 .rechtermenu li:hover   {
-    background-color: orange;
+    background-color: #F7A100
 
 }
 
 
 header button{
+
     order: -1;
     z-index: 1;
+
 
     
 
@@ -123,7 +133,7 @@ button .menu{
 
 .avatars .memberavatars:active{    
     background-color: #F7A100;
-    border: solid 3px orange;
+    border: solid 3px #F7A100;
     border-radius: 50%;
 
 }
@@ -143,25 +153,33 @@ button .menu{
 
 .logo{
     display: flex;
-    flex-shrink: 0;
+    max-width: 120px;
+    height: auto;
 
 }
 
-.logo {
-        max-width: 120px;
-        height: auto;
-    }
 
 dialog {
+    height: 600px;
+    width: 1000px;
     left:50%;
     top:50%;
-
     translate:-50% -50%;
+}
+
+dialog h2{
+    text-align: center;
+
+}
+
+dialog p{
+    text-align: center;
 }
 
 dialog::backdrop {
     background-color: #fff (255 0 0 / .7);
     backdrop-filter: blur(.1em);
+
 }
 
 .rating {
@@ -201,66 +219,149 @@ a:hover article{
 
 .houses{
     display: flex;
-    justify-content: center;
-    gap: 10em;
-    height: 10em;
-    margin-top: 3em;
+    justify-content: space-evenly;
+    margin-top: 7em;
+    margin-left: 15em;
+
+
 
     /* overflow:scroll;*/
 
 }
 
+
 .houses li{
-    display: flex;
-    justify-content: center;
     color: black;
     text-decoration: none;
+
 }   
 
 .houses a{
-    display: flex;
-    justify-content: center;
     color: black;
     text-decoration: none;
 } 
 
-.houses li{
-    display: flex;
-    justify-content: center;
-} 
-.houses img{
-    height: 30vh;
-    width: 30vw;
-    margin-left: auto;
-    margin-right: auto;
-    border: solid 2px #F7A100;
+.amsterdamseweg img{
+    height: 40vh;
+    width: 40vw;
+    margin-left: -10em;
+    border: solid 3px #F7A100;
 
 }
 
-.wie img{
-    position: absolute;
-    height: 5vh;
-    width: 5vw;
-  }
+.raadhuisstraat img{
+    height: 40vh;
+    width: 40vw;
+    margin-left: -10em;
+    border: solid 3px #F7A100;
 
-.wie2 img{
-    height: 5vh;
-    width: 5vw;
-  }
+}
+
+.houses h2{
+    margin-left: -1.5em;
+}
 
 
-.houses img:hover{
+
+.amsterdamseweg, .raadhuisstraat, img:hover{
     transform: scale(1.02);
     transition: .3s;
     z-index: inherit;
 }
 
 .filter {
-    margin-top: 1em;
-    margin-left: 1.5em;
-  }
-  
-  h2{
-    margin-left: 1em;
+    padding: 10px;
   }
 
+
+  .miniavatar1 img{
+    position: absolute;
+    margin-left: -12em;
+    margin-top: 3em;
+  }
+  
+
+  .miniavatar2 img{
+    position: absolute;
+    margin-left: 25em;
+    margin-top: 3em;
+  }
+  
+.rating1{
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    margin-left: 22em;
+    margin-top: 4em;
+}
+
+.rating2{
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    margin-left : 60em;
+    margin-top: 4em;
+}
+  .rating1 input, .rating2 input {
+    display: none;
+  }
+  
+  .rating1 label, .rating2 label {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ccc;
+    margin: 0 5px;
+  }
+  
+  .rating1 label:before, .rating2 label:before {
+    content: '\2606'; 
+  }
+  
+  .rating1 input:checked ~ label, .rating2 input:checked ~ label {
+    color: #f39c12; 
+  }
+  
+  .rating1 input:checked ~ label:before, .rating2 input:checked ~ label:before {
+    content: '\2605'; 
+  }
+  
+  
+
+  .boven-footer{
+    margin-top: 10em;
+    background-color: #CCCCCC; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 70px;
+    text-decoration: none;
+  }
+
+  .boven-footer a{
+    text-decoration: none;
+    color: #006199;
+  }
+  
+  .socials{
+    display: flex;
+  }
+
+  .beneden-footer{
+    display: flex;
+    justify-content: space-around;
+
+  }
+  .taalwissel{
+    display: flex;
+  }
+
+  .socials svg{
+
+    height: 50px;
+    padding-left: 20px;
+    width: 100%;
+
+  }
+  
+  footer{
+    background-color: #CCCCCC;
+  }
